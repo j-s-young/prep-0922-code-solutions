@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="The Raiders of the Lost Ark">
+        <h3>The Raiders of the Lost Ark</h3>
+        <p>First film the Indiana Jones series.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="The Temple of Doom">
+        <h3>The Temple of Doom</h3>
+        <p>Second film of the Indiana Jones series.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="The Last Crusade">
+        <h3>Indiana Jones and the Last Crusade</h3>
+        <p>Third film of the Indiana Jones series.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
